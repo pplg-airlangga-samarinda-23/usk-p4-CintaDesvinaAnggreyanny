@@ -1,7 +1,10 @@
 ## Identitas
 Nama : Cinta Desvina Anggreyanny
+<br>
 Sekolah : SMK TI Airlangga
-Jurusan : PPLG
+<br>
+Jurusan : XII PPLG
+<br>
 Tujuan
 Sistem Manajemen Perpustakaan berbasis web ini dibuat untuk mengelola data buku, anggota, peminjaman dan pengembalian secara terstruktur dan mudah.
 
@@ -12,9 +15,9 @@ Sistem ini memudahkan admin dalam mencatat koleksi buku, mengatur data anggota/s
 
 ## Cara Menggunakan
 1. Clone repository:
-  git clone https://github.com/pplg-airlangga-samarinda-23/usk-p4-GHANI-BLL.git
+  git clone https://github.com/pplg-airlangga-samarinda-23/usk-p4-CintaDesvinaAnggreyanny.git
 2. Buka folder project di File Manager
-3. Jalankan usk-p4-GHANI-BLL menggunakan browser atau gunakan Live Server di VS Code
+3. Jalankan usk-p4-CintaDesvinaAnggreyanny menggunakan browser atau gunakan Live Server di VS Code
 
 ## Akun Demo
 Username : cintaa
