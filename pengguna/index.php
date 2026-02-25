@@ -16,6 +16,7 @@ $users = $koneksi->query($sql)->fetch_all(MYSQLI_ASSOC);
 <h1>Data Pengguna</h1>
 
 <a href="create.php">Tambah</a>
+<a href="../dashboard-admin.php">Kembali</a>
 
 <table border="1" cellpadding="10">
     <thead>

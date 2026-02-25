@@ -22,6 +22,7 @@ $data = mysqli_query($koneksi, "
 <body>
     <h2>Data Peminjaman & Pengembalian</h2>
     <a href="create.php">Tambah</a>
+    <a href="../dashboard-admin.php">Kembali</a>
 
 <table border="1" cellpadding="10">
 <tr>

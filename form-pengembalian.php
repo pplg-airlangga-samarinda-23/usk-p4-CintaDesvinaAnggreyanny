@@ -90,7 +90,7 @@ while ($row = mysqli_fetch_assoc($data)) {
 </table>
 
 <br>
-<a href="dashboard-anggota.php">⬅ Kembali</a>
+<a href="dashboard-anggota.php">Kembali</a>
 
 </body>
 </html>

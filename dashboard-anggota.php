@@ -7,7 +7,18 @@ if (!isset($_SESSION['username'])) {
     exit;
 }
 
-$buku = $koneksi->query("SELECT * FROM buku")->fetch_all(MYSQLI_ASSOC);
+$keyword = isset($_GET['keyword']) ? $_GET['keyword'] : '';
+
+if ($keyword != '') {
+    $stmt = $koneksi->prepare("SELECT * FROM buku WHERE judul LIKE ? OR pengarang LIKE ?");
+    $cari = "%$keyword%";
+    $stmt->bind_param("ss", $cari, $cari);
+    $stmt->execute();
+    $result = $stmt->get_result();
+    $buku = $result->fetch_all(MYSQLI_ASSOC);
+} else {
+    $buku = $koneksi->query("SELECT * FROM buku")->fetch_all(MYSQLI_ASSOC);
+}
 ?>
 
 <!DOCTYPE html>
@@ -20,7 +31,14 @@ $buku = $koneksi->query("SELECT * FROM buku")->fetch_all(MYSQLI_ASSOC);
 <h2>Selamat datang, <?= $_SESSION['username'] ?> 👋</h2>
 
 <h3>Daftar Buku</h3>
-<a href="form-pengembalian.php">📘 Pengembalian Buku</a>
+<a href="form-pengembalian.php">Pengembalian Buku</a>
+<form method="GET">
+    <input type="text" name="keyword" placeholder="Cari judul atau pengarang..." 
+           value="<?= htmlspecialchars($keyword) ?>">
+    <button type="submit">Cari</button>
+</form>
+
+<br>
 
 <table border="1" cellpadding="10">
     <thead>
