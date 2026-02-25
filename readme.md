@@ -5,7 +5,8 @@ Sekolah : SMK TI Airlangga
 <br>
 Jurusan : XII PPLG
 <br>
-Tujuan
+
+## Tujuan
 Sistem Manajemen Perpustakaan berbasis web ini dibuat untuk mengelola data buku, anggota, peminjaman dan pengembalian secara terstruktur dan mudah.
 
 ## Deskripsi
